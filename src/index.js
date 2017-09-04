@@ -11,10 +11,8 @@ import './styles/index.css';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
-//import promise from 'redux-promise';
 
-//react router imports
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 
 //components
@@ -29,4 +27,4 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('#root'));
